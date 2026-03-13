@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wedding Invitation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
+</head>
+
+<body>
+
+<audio id="music" loop>
+<source src="music/wedding.mp3">
+</audio>
+
+<div class="scene">
+
+<div class="envelope" id="envelope">
+
+<div class="flap"></div>
+
+<div class="card" id="card">
+
+<div class="cover">
+<img src="images/cover.jpg">
+</div>
+
+<div class="inside">
+
+<div class="page">
+<img src="images/page1.jpg">
+</div>
+
+<div class="page">
+<img src="images/page2.jpg">
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div id="petals"></div>
+
+<div id="countdown" class="countdown hidden">
+
+<h2>Wedding Countdown</h2>
+
+<div class="timer">
+
+<div>
+<span id="days">0</span>
+<p>Days</p>
+</div>
+
+<div>
+<span id="hours">0</span>
+<p>Hours</p>
+</div>
+
+<div>
+<span id="minutes">0</span>
+<p>Minutes</p>
+</div>
+
+<div>
+<span id="seconds">0</span>
+<p>Seconds</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="swipe-hint">Swipe Up to Open</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
